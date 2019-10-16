@@ -1,0 +1,10 @@
+/* Définition des deux couleurs principales */
+body {
+--lightcolor: #FECA07;
+--darkcolor: #404040;
+}
+
+
+/* Règles particulières pour les petits écrans */
+@media screen and (max-width: 768px) {
+}

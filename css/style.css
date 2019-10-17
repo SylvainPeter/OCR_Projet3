@@ -1,10 +1,45 @@
 /* Définition des deux couleurs principales */
 body {
---lightcolor: #FECA07;
---darkcolor: #404040;
+--greencolor:#579c87;
+--yellowcolor:#fdcb46;
 }
-
-
+/* Container qui entoure la page */
+.container {
+margin-right: 0.5cm;
+margin-left: 0.5cm;
+}
+header {
+background-color: var(--greencolor);
+color: var(--yellowcolor);
+padding: 20px 15px 20px 15px;
+text-align: center;
+}
+.logo {
+width:30vw;
+}
+.menu {
+display: flex;
+justify-content: space-around;
+margin:1cm;
+}
+/* Menus du restaurant cliquables */
+.menu-image {
+border: 1px solid lightgrey;
+width: 20vw;
+}
+.prochainement {
+background-color: var(--greencolor);
+color: var(--yellowcolor);
+border-radius: 5px;
+text-align: center;
+}
+footer {
+display: flex;
+justify-content: space-between;
+padding: 0px 15px 0px 15px;
+background-color: var(--greencolor);
+color: var(--yellowcolor);
+}
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width: 768px) {
 }

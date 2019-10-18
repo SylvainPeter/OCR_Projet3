@@ -3,11 +3,17 @@ body {
 --greencolor:#579c87;
 --yellowcolor:#fdcb46;
 }
+/* Style des liens */
+a {
+text-decoration : none;
+color : var(--yellowcolor);
+}
 /* Container qui entoure la page */
 .container {
 margin-right: 0.5cm;
 margin-left: 0.5cm;
 }
+/* Mise en page du Footer */
 header {
 background-color: var(--greencolor);
 color: var(--yellowcolor);
@@ -15,30 +21,65 @@ padding: 20px 15px 20px 15px;
 text-align: center;
 }
 .logo {
-width:30vw;
+width:20vw;
 }
+/* Mise en page de la section "Menus" */
 .menu {
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 margin:1cm;
 }
-/* Menus du restaurant cliquables */
+/* Aspect des menus cliquables */
 .menu-image {
 border: 1px solid lightgrey;
-width: 20vw;
+width: 30vw;
 }
+/* Zoom au survol des menus */
+.menu-image:hover{
+transform: scale(1.3);
+opacity : 0.65;
+transition: all ease 500ms;
+}
+/* Mise en page des grands menus */
+.big-menu {
+width:1000px;
+margin-left: 4cm;
+}
+/* Mise en page de la barre "prochainement" */
 .prochainement {
 background-color: var(--greencolor);
 color: var(--yellowcolor);
 border-radius: 5px;
+font-size: calc(10px+1vw);
 text-align: center;
+margin-left:30%;
+margin-right:30%;
+padding: 5px;
 }
+/* Mise en page du Footer */
 footer {
+position: -webkit-sticky;
+position: sticky;
+bottom: 0px;
 display: flex;
 justify-content: space-between;
 padding: 0px 15px 0px 15px;
 background-color: var(--greencolor);
 color: var(--yellowcolor);
+}
+.footer-section {
+font-size:1.5em;
+}
+.footer-section:hover{
+animation: wiggle 75ms 2;
+animation-timing-function: linear;
+}
+/* Animation "wiggle" */
+@keyframes wiggle {
+0% { transform: translate(2px, 0); }
+50% { transform: translate(-2px, 0); }
+100% { transform: translate(2px, 0); }
 }
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width: 768px) {

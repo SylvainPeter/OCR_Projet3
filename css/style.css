@@ -1,7 +1,13 @@
+/* Définition des polices */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 /* Définition des deux couleurs principales */
 body {
 --greencolor:#579c87;
 --yellowcolor:#fdcb46;
+margin: 0;
+
 }
 /* Style des liens */
 a {
@@ -21,19 +27,20 @@ padding: 20px 15px 20px 15px;
 text-align: center;
 }
 .logo {
-width:20vw;
+width:22vw;
 }
 /* Mise en page de la section "Menus" */
 .menu {
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
-margin:1cm;
+margin: 2% 10%;
 }
 /* Aspect des menus cliquables */
 .menu-image {
 border: 1px solid lightgrey;
 width: 30vw;
+margin-top: 40px;
 }
 /* Zoom au survol des menus */
 .menu-image:hover{
@@ -46,33 +53,49 @@ transition: all ease 500ms;
 width:1000px;
 margin-left: 4cm;
 }
+/* Couleur de fond du grand menu 1 */
+.colormenu1 {
+background-color: #FCDFDB;
+}
+/* Couleur de fond du grand menu 3 */
+.colormenu3 {
+background-color: #EDEFEE;
+}
 /* Mise en page de la barre "prochainement" */
 .prochainement {
 background-color: var(--greencolor);
 color: var(--yellowcolor);
-border-radius: 5px;
-font-size: calc(10px+1vw);
+font-family: 'Montserrat', sans-serif;
+border-radius: 13px;
+font-size: calc(1.3vw + 8px);
 text-align: center;
-margin-left:30%;
-margin-right:30%;
-padding: 5px;
+width: 30vw;
+margin: 0 auto;
+margin-bottom: 17px;
+padding-bottom: 14px;
+padding-top: 14px;
+}
+/* Taille du texte "prochainement" */
+h2 {
+font-size: calc(1vw + 15px);
 }
 /* Mise en page du Footer */
 footer {
+background-color: var(--greencolor);
+color: var(--yellowcolor);
 position: -webkit-sticky;
 position: sticky;
 bottom: 0px;
 display: flex;
 justify-content: space-between;
-padding: 0px 15px 0px 15px;
-background-color: var(--greencolor);
-color: var(--yellowcolor);
+padding: 2vh;
 }
 .footer-section {
-font-size:1.5em;
+font-family: 'Lato', sans-serif;
+font-size: calc(1vw + 10px);
 }
 .footer-section:hover{
-animation: wiggle 75ms 2;
+animation: wiggle 75ms 3;
 animation-timing-function: linear;
 }
 /* Animation "wiggle" */

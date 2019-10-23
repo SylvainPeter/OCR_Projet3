@@ -1,5 +1,5 @@
 /* Définition des polices */
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Dancing+Script|Caveat');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Dancing+Script|Caveat|Rouge+Script|Josefin+Sans');
 /* Définition des deux couleurs principales */
 body {
 --greencolor:#579c87;
@@ -23,6 +23,7 @@ color: var(--yellowcolor);
 padding: 20px 15px 20px 15px;
 text-align: center;
 }
+/* Taille du logo */
 .logo {
 width:22vw;
 }
@@ -44,19 +45,6 @@ margin-top: 40px;
 transform: scale(1.3);
 opacity : 0.65;
 transition: all ease 500ms;
-}
-/* Mise en page des grands menus */
-.big-menu {
-width:1000px;
-margin-left: 4cm;
-}
-/* Couleur de fond du grand menu 1 */
-.colormenu1 {
-background-color: #FCDFDB;
-}
-/* Couleur de fond du grand menu 3 */
-.colormenu3 {
-background-color: #EDEFEE;
 }
 /* Mise en page de la barre "prochainement" */
 .prochainement {
@@ -95,8 +83,39 @@ font-size: calc(1vw + 10px);
 animation: wiggle 75ms 3;
 animation-timing-function: linear;
 }
-.menu-container {
-padding:30px;
+/* Mise en page des grands menus */
+.big-menu {
+width:1000px;
+margin-left: 4cm;
+}
+/* Couleur de fond et marges du grand menu 1 */
+.menu1-container {
+padding:100px;
+background-color: #FCDFDB;
+}
+/* Menu 1 centrage de la note */
+.note {
+display: block;
+margin: 0 auto;
+}
+.menu1-title {
+font-family: 'Rouge Script', sans-serif;
+font-size: calc(5.3vw + 8px);
+text-align: center;
+color: #43191f;
+}
+.menu1-subtitle {
+display: block;
+text-align: center;
+}
+.menu1-content {
+font-family: 'Caveat', sans-serif;
+font-size: calc(1.5vw + 10px);
+color: #43191f;
+}
+/* Couleur de fond du grand menu 3 */
+.colormenu3 {
+background-color: #EDEFEE;
 }
 .menu3-title {
 font-family: 'Dancing Script', sans-serif;
@@ -107,6 +126,11 @@ text-align: center;
 font-family: 'Caveat', sans-serif;
 font-size: calc(1.5vw + 10px);
 }
+.menu4-title {
+background: linear-gradient(to left, #30CFD0 0%, #330867 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 /* Animation "wiggle" */
 @keyframes wiggle {
 0% { transform: translate(2px, 0); }
@@ -115,4 +139,7 @@ font-size: calc(1.5vw + 10px);
 }
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width: 768px) {
+.menu1-container {
+padding:15px;
+}
 }

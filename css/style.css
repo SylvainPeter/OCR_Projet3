@@ -1,13 +1,10 @@
 /* Définition des polices */
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Dancing+Script|Caveat');
 /* Définition des deux couleurs principales */
 body {
 --greencolor:#579c87;
 --yellowcolor:#fdcb46;
 margin: 0;
-
 }
 /* Style des liens */
 a {
@@ -97,6 +94,18 @@ font-size: calc(1vw + 10px);
 .footer-section:hover{
 animation: wiggle 75ms 3;
 animation-timing-function: linear;
+}
+.menu-container {
+padding:30px;
+}
+.menu3-title {
+font-family: 'Dancing Script', sans-serif;
+font-size: calc(5.3vw + 8px);
+text-align: center;
+}
+.menu3-content {
+font-family: 'Caveat', sans-serif;
+font-size: calc(1.5vw + 10px);
 }
 /* Animation "wiggle" */
 @keyframes wiggle {

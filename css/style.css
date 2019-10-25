@@ -1,5 +1,5 @@
 /* Définition des polices */
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Dancing+Script|Caveat|Rouge+Script|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Dancing+Script|Caveat|Josefin+Sans');
 /* Définition des deux couleurs principales */
 body {
 --greencolor:#579c87;
@@ -23,9 +23,9 @@ color: var(--yellowcolor);
 padding: 20px 15px 20px 15px;
 text-align: center;
 }
-/* Taille du logo */
-.logo {
-width:22vw;
+/* Logo "ohmyfood" */
+#logo {
+width:25vw;
 }
 /* Mise en page de la section "Menus" */
 .menu {
@@ -56,7 +56,8 @@ font-size: calc(1.3vw + 8px);
 text-align: center;
 width: 30vw;
 margin: 0 auto;
-margin-bottom: 17px;
+margin-top: 50px;
+margin-bottom: 50px;
 padding-bottom: 14px;
 padding-top: 14px;
 }
@@ -68,12 +69,12 @@ font-size: calc(1vw + 15px);
 footer {
 background-color: var(--greencolor);
 color: var(--yellowcolor);
-position: -webkit-sticky;
 position: sticky;
 bottom: 0px;
 display: flex;
 justify-content: space-between;
 padding: 2vh;
+margin-top:20px;
 }
 .footer-section {
 font-family: 'Lato', sans-serif;
@@ -93,35 +94,69 @@ margin-left: 4cm;
 padding:100px;
 background-color: #FCDFDB;
 }
-/* Menu 1 centrage de la note */
-.note {
+/* Menu 1, grand logo "La note enchantée" */
+#menu1-big-logo {
 display: block;
-margin: 0 auto;
+width:calc(24vw + 30px);
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
 }
-.menu1-title {
-font-family: 'Rouge Script', sans-serif;
-font-size: calc(5.3vw + 8px);
-text-align: center;
-color: #43191f;
+/* Menu 1, petit logo "La note enchantée" */
+#menu1-small-logo {
+display: block;
+width:25vw;
+margin-left: auto;
+margin-right: auto;
+padding-top:25vh;
+padding-bottom:15vh;
 }
+/* Menu 1, bordures */
+.menu1-border{
+width:26vw;
+}
+/* Menu 1, sous-titres */
 .menu1-subtitle {
 display: block;
 text-align: center;
+font-weight: bolder;
+font-size: calc(2.3vw + 10px);
+padding-top:24vh;
+padding-bottom:15vh;
 }
+/* Menu 1, contenu */
 .menu1-content {
 font-family: 'Caveat', sans-serif;
 font-size: calc(1.5vw + 10px);
 color: #43191f;
 }
-/* Couleur de fond du grand menu 3 */
-.colormenu3 {
+/* Couleur de fond et marges du grand menu 3 */
+.menu3-container {
+padding:82px 50px 100px 50px;
 background-color: #EDEFEE;
 }
-.menu3-title {
-font-family: 'Dancing Script', sans-serif;
-font-size: calc(5.3vw + 8px);
-text-align: center;
+/* Menu 3, grand logo "Le délice des papilles" */
+#menu3-big-logo {
+display: block;
+width:calc(40vw + 33px);
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
 }
+/* Menu 3, bordures */
+.menu3-border{
+width:26vw;
+padding-top:18px;
+}
+/* Menu 3, sous-titres */
+.menu3-subtitle {
+display: block;
+text-align: center;
+font-size: calc(2.3vw + 10px);
+padding-top:24vh;
+padding-bottom:15vh;
+}
+/* Menu 3, contenu */
 .menu3-content {
 font-family: 'Caveat', sans-serif;
 font-size: calc(1.5vw + 10px);
@@ -131,15 +166,26 @@ background: linear-gradient(to left, #30CFD0 0%, #330867 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+/* Style des prix */
+.price {
+font-weight: bolder;
+}
 /* Animation "wiggle" */
 @keyframes wiggle {
 0% { transform: translate(2px, 0); }
 50% { transform: translate(-2px, 0); }
 100% { transform: translate(2px, 0); }
 }
+
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width: 768px) {
 .menu1-container {
 padding:15px;
+}
+.menu3-container {
+padding:82px 10px 100px 10px;
+}
+.menu3-border{
+padding-top:10px;
 }
 }

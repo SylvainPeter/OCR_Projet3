@@ -28,7 +28,7 @@ text-align: center;
 width:25vw;
 }
 /* Mise en page de la section "Menus" */
-.menu {
+#menu-container {
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
@@ -46,8 +46,12 @@ transform: scale(1.3);
 opacity : 0.65;
 transition: all ease 500ms;
 }
+/* Taille du texte "prochainement" */
+h2 {
+font-size: calc(1vw + 15px);
+}
 /* Mise en page de la barre "prochainement" */
-.prochainement {
+#button-container {
 background-color: var(--greencolor);
 color: var(--yellowcolor);
 font-family: 'Montserrat', sans-serif;
@@ -56,14 +60,37 @@ font-size: calc(1.3vw + 8px);
 text-align: center;
 width: 30vw;
 margin: 0 auto;
-margin-top: 50px;
-margin-bottom: 50px;
+margin-top: 60px;
+margin-bottom: 40px;
 padding-bottom: 14px;
 padding-top: 14px;
+cursor: pointer;
 }
-/* Taille du texte "prochainement" */
-h2 {
-font-size: calc(1vw + 15px);
+/* Cont */
+#loader-container {
+width: calc(100% - 200px);
+margin-left:10vw;
+margin-right:10vw;
+}
+/* Aspect des trois points */
+#loader-container label {
+font-size: calc(2vw + 10px);
+color: var(--yellowcolor);
+opacity: 0;
+display:inline-block;
+}
+/* Animation des trois points */
+#loader-container label:nth-child(1) {
+-webkit-animation: lol 1.5s 500ms infinite ease-in-out;
+animation: lol 1.5s 300ms infinite ease-in-out;
+}
+#loader-container label:nth-child(2) {
+-webkit-animation: lol 1.5s 400ms infinite ease-in-out;
+animation: lol 1.5s 400ms infinite ease-in-out;
+}
+#loader-container label:nth-child(3) {
+-webkit-animation: lol 1.5s 300ms infinite ease-in-out;
+animation: lol 1.5s 500ms infinite ease-in-out;
 }
 /* Mise en page du Footer */
 footer {
@@ -170,13 +197,25 @@ background: linear-gradient(to left, #30CFD0 0%, #330867 100%);
 .price {
 font-weight: bolder;
 }
-/* Animation "wiggle" */
+/* Animation "secousse" */
 @keyframes wiggle {
 0% { transform: translate(2px, 0); }
 50% { transform: translate(-2px, 0); }
 100% { transform: translate(2px, 0); }
 }
-
+/* Animation "trois points" */
+@keyframes lol {
+0% { opacity: 0; }
+33% { opacity: 1;}
+66% { opacity: 1;}
+100% { opacity: 0;}
+}
+@-webkit-keyframes lol {
+0% { opacity: 0;}
+33% { opacity: 1;}
+66% { opacity: 1;}
+100% { opacity: 0;}
+}
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width: 768px) {
 .menu1-container {

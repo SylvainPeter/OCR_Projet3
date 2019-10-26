@@ -1,5 +1,5 @@
 /* Définition des polices */
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Dancing+Script|Caveat|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Caveat|PT-Serif');
 /* Définition des deux couleurs principales */
 body {
 --greencolor:#579c87;
@@ -10,11 +10,6 @@ margin: 0;
 a {
 text-decoration : none;
 color : var(--yellowcolor);
-}
-/* Container qui entoure la page */
-.container {
-margin-right: 0.5cm;
-margin-left: 0.5cm;
 }
 /* Mise en page du Footer */
 header {
@@ -62,15 +57,17 @@ width: 30vw;
 margin: 0 auto;
 margin-top: 60px;
 margin-bottom: 40px;
-padding-bottom: 14px;
-padding-top: 14px;
+padding-top: 9px;
+padding-bottom: 4px;
 cursor: pointer;
 }
 /* Cont */
 #loader-container {
 width: calc(100% - 200px);
-margin-left:10vw;
+margin-left:7.5vw;
 margin-right:10vw;
+margin-top:5px;
+margin-top: -18px;
 }
 /* Aspect des trois points */
 #loader-container label {
@@ -116,9 +113,14 @@ animation-timing-function: linear;
 width:1000px;
 margin-left: 4cm;
 }
-/* Couleur de fond et marges du grand menu 1 */
+/* Marges des paragraphes de menu */
+.mini-container {
+margin-left: 6vw;
+margin-right: 6vw;
+}
+/* Couleur de fond et marges extérieures du grand menu 1 */
 .menu1-container {
-padding:100px;
+padding: 100px 100px 55px 100px;
 background-color: #FCDFDB;
 }
 /* Menu 1, grand logo "La note enchantée" */
@@ -155,7 +157,53 @@ padding-bottom:15vh;
 .menu1-content {
 font-family: 'Caveat', sans-serif;
 font-size: calc(1.5vw + 10px);
+line-height: calc(3vw + 13px);
 color: #43191f;
+}
+/* Marges extérieures du grand menu 2 */
+.menu2-container {
+padding:100px;
+}
+/* Menu 2, grand logo "Le chic à la française" */
+#menu2-big-logo {
+display: block;
+width: calc(37vw + 50px);
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
+padding-bottom: 4vw;
+}
+/* Menu 2, bordures */
+.menu2-color1{
+color:#C67412;
+}
+/* Menu 2, couleur 1 */
+.menu2-color2{
+color:#A56799;
+}
+/* Menu 2, couleur 2 */
+.menu2-color3{
+color:#6E4CCC;
+}
+/* Menu 2, couleur 3 */
+.menu2-border{
+width:26vw;
+padding-top:15px;
+}
+/* Menu 2, sous-titres */
+.menu2-subtitle {
+display: block;
+text-align: center;
+font-weight: bolder;
+font-size: calc(2vw + 7px);
+padding-top:20vh;
+padding-bottom:15vh;
+}
+/* Menu 2, contenu */
+.menu2-content {
+font-family: 'PT Serif', serif;
+font-size: calc(1vw + 9px);
+line-height: calc(2.5vw + 15px);
 }
 /* Couleur de fond et marges du grand menu 3 */
 .menu3-container {
@@ -188,10 +236,37 @@ padding-bottom:15vh;
 font-family: 'Caveat', sans-serif;
 font-size: calc(1.5vw + 10px);
 }
-.menu4-title {
-background: linear-gradient(to left, #30CFD0 0%, #330867 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+/* Marges extérieures du grand menu 4 */
+.menu4-container {
+padding:100px;
+}
+/* Menu 4, grand logo "La palette du goût" */
+#menu4-big-logo {
+display: block;
+width: calc(42vw + 20px);
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
+}
+/* Menu 4, bordures */
+.menu4-border{
+width:26vw;
+padding-top:20px;
+}
+/* Menu 4, sous-titres */
+.menu4-subtitle {
+display: block;
+text-align: center;
+font-size: calc(2vw + 10px);
+padding-top:26vh;
+padding-bottom:15vh;
+}
+/* Menu 4, contenu */
+.menu4-content {
+font-family: 'Caveat', sans-serif;
+font-size: calc(1.5vw + 10px);
+color: #43191f;
+line-height: calc(3vw + 13px);
 }
 /* Style des prix */
 .price {
@@ -218,13 +293,28 @@ font-weight: bolder;
 }
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width: 768px) {
+.mini-container {
+margin: 0 auto;
+}
 .menu1-container {
 padding:15px;
+}
+.menu2-container {
+padding:55px 10px 100px 10px;
 }
 .menu3-container {
 padding:82px 10px 100px 10px;
 }
+.menu4-container {
+padding:82px 10px 100px 10px;
+}
 .menu3-border{
 padding-top:10px;
+}
+#loader-container {
+width:100%;
+margin-left:1vw;
+margin-right: 10vw;
+margin-top: -10px;
 }
 }

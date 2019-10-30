@@ -3,21 +3,21 @@
 
 /* Définition des deux couleurs principales du site */
 body {
-	--greencolor: #579c87;
-	--yellowcolor: #fdcb46;
+    --text_color: #fdcb46;
+	--background_color: #579c87;
 	margin: 0;
 }
 
 /* Aspect des liens */
 a {
 	text-decoration: none;
-	color: var(--yellowcolor);
+	color: var(--text_color);
 }
 
 /* Mise en page du header */
 header {
-	background-color: var(--greencolor);
-	color: var(--yellowcolor);
+	background-color: var(--background_color);
+	color: var(--text_color);
 	padding: 1px 15px 1px 15px;
 	text-align: center;
 }
@@ -51,8 +51,8 @@ header {
 
 /* Mise en page du bouton "prochainement" */
 #button-container {
-	background-color: var(--greencolor);
-	color: var(--yellowcolor);
+	background-color: var(--background_color);
+	color: var(--text_color);
 	font-family: 'Montserrat', sans-serif;
 	border-radius: 13px;
 	font-size: calc(1.3vw + 8px);
@@ -78,7 +78,7 @@ header {
 /* Aspect des trois points */
 #loader-container label {
 	font-size: calc(2vw + 10px);
-	color: var(--yellowcolor);
+	color: var(--text_color);
 	opacity: 0;
 	display: inline-block;
 }
@@ -101,8 +101,8 @@ header {
 
 /* Mise en page du footer */
 footer {
-	background-color: var(--greencolor);
-	color: var(--yellowcolor);
+	background-color: var(--background_color);
+	color: var(--text_color);
 	position: sticky;
 	bottom: 0px;
 	display: flex;
@@ -124,7 +124,7 @@ footer {
 }
 
 /* Aspect de la section "mentions légales" */
-.legal-container {
+#legal-container {
 margin: 20px;
 }
 
@@ -140,8 +140,8 @@ margin: 20px;
 	margin-right: 6vw;
 }
 
-/* Flexbox des plats dans les grands menus */
-.dish {
+/* Flexbox dans les grands menus */
+.menu-flex {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -153,7 +153,7 @@ margin: 20px;
 }
 
 /* Couleur de fond et marges extérieures du Menu 1 */
-.note-enchantée-container {
+#note-enchantée-container {
 	padding: 100px 100px 55px 100px;
 	background-color: #FCDFDB;
 }
@@ -200,9 +200,9 @@ margin: 20px;
 	color: #43191f;
 }
 
-/* Marges extérieures du Menu 2 */
-.chic-française-container {
-	padding: 100px;
+/* Couleur de fond et marges du Menu 2 */
+#chic-française-container {
+	padding: 32px;
 }
 
 /* Menu 2, grand logo */
@@ -254,7 +254,7 @@ margin: 20px;
 }
 
 /* Couleur de fond et marges du Menu 3 */
-.le-délice-container {
+#le-délice-container {
 	padding: 82px 50px 100px 50px;
 	background-color: #EDEFEE;
 }
@@ -290,7 +290,7 @@ margin: 20px;
 }
 
 /* Marges extérieures du Menu 4 */
-.la-palette-container {
+#la-palette-container {
 	padding: 100px;
 }
 
@@ -314,7 +314,7 @@ margin: 20px;
 	display: block;
 	text-align: center;
 	font-size: calc(2vw + 10px);
-	padding-top: 26vh;
+	padding-top: 13vh;
 	padding-bottom: 15vh;
 }
 
@@ -390,19 +390,19 @@ margin: 20px;
 		margin: 0 auto;
 	}
 
-	.note-enchantée-container {
+	#note-enchantée-container {
 		padding: 15px;
 	}
 
-	.chic-française-container {
+	#chic-française-container {
 		padding: 55px 10px 100px 10px;
 	}
 
-	.le-délice-container {
+	#le-délice-container {
 		padding: 82px 10px 100px 10px;
 	}
 
-	.la-palette-container {
+	#la-palette-container {
 		padding: 82px 10px 100px 10px;
 	}
 
@@ -416,7 +416,7 @@ margin: 20px;
 		margin-right: 10vw;
 		margin-top: -10px;
 	}
-   .legal-container {
+   #legal-container {
     font-size: 12px;
     }
 }

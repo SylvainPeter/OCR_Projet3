@@ -3,7 +3,7 @@
 
 /* Définition des deux couleurs principales du site */
 body {
-    --text_color: #fdcb46;
+	--text_color: #fdcb46;
 	--background_color: #579c87;
 	margin: 0;
 }
@@ -23,12 +23,12 @@ header {
 }
 
 /* Taille du logo "ohmyfood" */
-#ohmyfood-logo {
+#header-logo {
 	width: 25%;
 }
 
 /* Flexbox autour des petits menus */
-#menu-container {
+#small-menu-container {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -36,14 +36,14 @@ header {
 }
 
 /* Aspect des petits menus cliquables */
-.menu-image {
+.small-menu-image {
 	border: 1px solid lightgrey;
 	width: 30vw;
 	margin-top: 40px;
 }
 
 /* Transition "effet zoom et transparence" au survol des petits menus */
-.menu-image:hover {
+.small-menu-image:hover {
 	transform: scale(1.3);
 	opacity: 0.65;
 	transition: all ease 500ms;
@@ -76,7 +76,7 @@ header {
 }
 
 /* Aspect des trois points */
-#loader-container label {
+label {
 	font-size: calc(2vw + 10px);
 	color: var(--text_color);
 	opacity: 0;
@@ -84,17 +84,17 @@ header {
 }
 
 /* Animation des trois points */
-#loader-container label:nth-child(1) {
+label:nth-child(1) {
 	animation: points 1.5s 500ms infinite ease-in-out;
 	-webkit-animation: points 1.5s 300ms infinite ease-in-out;
 }
 
-#loader-container label:nth-child(2) {
+label:nth-child(2) {
 	animation: points 1.5s 400ms infinite ease-in-out;
 	-webkit-animation: points 1.5s 400ms infinite ease-in-out;
 }
 
-#loader-container label:nth-child(3) {
+label:nth-child(3) {
 	animation: points 1.5s 300ms infinite ease-in-out;
 	-webkit-animation: points 1.5s 500ms infinite ease-in-out;
 }
@@ -125,7 +125,7 @@ footer {
 
 /* Aspect de la section "mentions légales" */
 #legal-container {
-margin: 20px;
+	margin: 20px;
 }
 
 /* Mise en page des grands menus */
@@ -134,13 +134,13 @@ margin: 20px;
 	margin-left: 4cm;
 }
 
-/* Marges des paragraphes des grands menu */
+/* Marges des paragraphes intérieurs des grands menu */
 .mini-container {
 	margin-left: 6vw;
 	margin-right: 6vw;
 }
 
-/* Flexbox dans les grands menus */
+/* Flexbox des grands menus */
 .menu-flex {
 	display: flex;
 	justify-content: space-between;
@@ -152,22 +152,37 @@ margin: 20px;
 	font-weight: bolder;
 }
 
-/* Couleur de fond et marges extérieures du Menu 1 */
-#note-enchantée-container {
-	padding: 100px 100px 55px 100px;
+/* Marges extérieures des grands menus */
+.big-menu-container {
+	padding: 100px 65px 55px 65px;
+}
+
+.big-menu-container--salmon-background {
 	background-color: #FCDFDB;
 }
 
-/* Menu 1, grand logo */
-#note-enchantée-logo {
+.big-menu-container--grey-background {
+	background-color: #EDEFEE;
+}
+
+/* Logo des grands menus */
+.big-menu-logo {
 	display: block;
-	width: calc(24vw + 30px);
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 5px;
 }
 
-/* Menu 1, petit logo */
+.big-menu-logo--width-note-enchantée {
+	width: 40%;
+}
+
+.big-menu-logo--width-chic-française {
+	width: 60%;
+}
+
+/* Petit logo "La note enchantée" */
 #note-enchantée-small-logo {
 	display: block;
 	width: 30%;
@@ -177,153 +192,49 @@ margin: 20px;
 	padding-bottom: 15vh;
 }
 
-/* Menu 1, bordures */
-.note-enchantée-border {
-	width: 26vw;
-}
-
-/* Menu 1, sous-titres */
-.note-enchantée-subtitle {
-	display: block;
-	text-align: center;
-	font-weight: bolder;
-	font-size: calc(2.3vw + 10px);
-	padding-top: 24vh;
-	padding-bottom: 15vh;
-}
-
-/* Menu 1, contenu */
-.note-enchantée-content {
-	font-family: 'Caveat', sans-serif;
-	font-size: calc(1.5vw + 10px);
-	line-height: calc(3vw + 13px);
-	color: #43191f;
-}
-
-/* Couleur de fond et marges du Menu 2 */
-#chic-française-container {
-	padding: 32px;
-}
-
-/* Menu 2, grand logo */
-#chic-française-big-logo {
-	display: block;
-	width: calc(37vw + 50px);
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5px;
-	padding-bottom: 4vw;
-}
-
-/* Menu 2, bordures */
-.chic-française-color1 {
-	color: #C67412;
-}
-
-/* Menu 2, couleur 1 */
-.chic-française-color2 {
-	color: #A56799;
-}
-
-/* Menu 2, couleur 2 */
-.chic-française-color3 {
-	color: #6E4CCC;
-}
-
-/* Menu 2, couleur 3 */
-.chic-française-border {
+/* Bordures des grands menus */
+.big-menu-border {
 	width: 26vw;
 	padding-top: 15px;
 }
 
-/* Menu 2, sous-titres */
-.chic-française-subtitle {
-	display: block;
-	text-align: center;
-	font-weight: bolder;
-	font-size: calc(2vw + 7px);
+/* "le chic à la française", couleur 1 */
+.chic-française--dark-orange {
+	color: #C67412;
+}
+
+/* "le chic à la française", couleur 2*/
+.chic-française--magenta {
+	color: #A56799;
+}
+
+/* "le chic à la française", couleur 3 */
+.chic-française--purple {
+	color: #6E4CCC;
+}
+
+/* Padding des sous-titres des grands menus */
+.big-menu-subtitle {
 	padding-top: 20vh;
 	padding-bottom: 15vh;
 }
 
-/* Menu 2, contenu */
-.chic-française-content {
-	font-family: 'PT Serif', serif;
-	font-size: calc(1vw + 9px);
-	line-height: calc(2.5vw + 15px);
-}
-
-/* Couleur de fond et marges du Menu 3 */
-#le-délice-container {
-	padding: 82px 50px 100px 50px;
-	background-color: #EDEFEE;
-}
-
-/* Menu 3, grand logo */
-#le-délice-big-logo {
-	display: block;
-	width: calc(40vw + 33px);
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5px;
-}
-
-/* Menu 3, bordures */
-.le-délice-border {
-	width: 26vw;
-	padding-top: 18px;
-}
-
-/* Menu 3, sous-titres */
-.le-délice-subtitle {
-	display: block;
-	text-align: center;
-	font-size: calc(2.3vw + 10px);
-	padding-top: 24vh;
-	padding-bottom: 15vh;
-}
-
-/* Menu 3, contenu */
-.le-délice-content {
-	font-family: 'Caveat', sans-serif;
-	font-size: calc(1.5vw + 10px);
-}
-
-/* Marges extérieures du Menu 4 */
-#la-palette-container {
-	padding: 100px;
-}
-
-/* Menu 4, grand logo */
-#la-palette-big-logo {
-	display: block;
-	width: calc(42vw + 20px);
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5px;
-}
-
-/* Menu 4, bordures */
-.la-palette-border {
-	width: 26vw;
-	padding-top: 20px;
-}
-
-/* Menu 4, sous-titres */
-.la-palette-subtitle {
-	display: block;
-	text-align: center;
-	font-size: calc(2vw + 10px);
-	padding-top: 13vh;
-	padding-bottom: 15vh;
-}
-
-/* Menu 4, contenu */
-.la-palette-content {
-	font-family: 'Caveat', sans-serif;
-	font-size: calc(1.5vw + 10px);
-	color: #43191f;
+.big-menu-content {
+	font-size: calc(1vw + 10px);
 	line-height: calc(3vw + 13px);
+}
+
+.big-menu-content--font1 {
+	font-family: 'Caveat', sans-serif;
+	color: #43191f;
+}
+
+.big-menu-content--font2 {
+	font-family: 'PT Serif', serif;
+}
+
+.big-menu-content--dark-red {
+	color: #43191f;
 }
 
 /* Animation "secousse" */
@@ -383,31 +294,16 @@ margin: 20px;
 
 /* Règles particulières pour les petits écrans */
 @media screen and (max-width:768px) {
-	#ohmyfood-logo {
-	width: 35%;
-    } 
+	#header-logo {
+		width: 35%;
+	}
+
 	.mini-container {
 		margin: 0 auto;
 	}
 
-	#note-enchantée-container {
-		padding: 15px;
-	}
-
-	#chic-française-container {
-		padding: 55px 10px 100px 10px;
-	}
-
-	#le-délice-container {
+	.big-menu-container {
 		padding: 82px 10px 100px 10px;
-	}
-
-	#la-palette-container {
-		padding: 82px 10px 100px 10px;
-	}
-
-	.le-délice-border {
-		padding-top: 10px;
 	}
 
 	#loader-container {
@@ -416,7 +312,9 @@ margin: 20px;
 		margin-right: 10vw;
 		margin-top: -10px;
 	}
-   #legal-container {
-    font-size: 12px;
-    }
+
+	#legal-container {
+		font-size: 12px;
+	}
+
 }

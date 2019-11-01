@@ -1,7 +1,7 @@
 /* Définition des polices */
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Caveat|PT-Serif');
 
-/* Définition des deux couleurs principales du site */
+/* Définition des couleurs principales du site */
 body {
 	--text_color: #fdcb46;
 	--background_color: #579c87;
@@ -11,7 +11,33 @@ body {
 /* Aspect des liens */
 a {
 	text-decoration: none;
-	color: var(--text_color);
+	color: var(--darkred);
+	cursor: pointer;
+}
+
+/* Animation souligné */
+a.left_animation {
+	position: relative;
+}
+
+a.left_animation:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	bottom: -10px;
+	left: 0;
+	background-color: #e69500;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	transition-duration: 0.55s;
+}
+
+a.left_animation:hover:before {
+	visibility: visible;
+	opacity: 1;
+	width: 100%;
 }
 
 /* Mise en page du header */
@@ -24,7 +50,7 @@ header {
 
 /* Taille du logo "ohmyfood" */
 #header-logo {
-	width: 25%;
+	width: 23%;
 }
 
 /* Flexbox autour des petits menus */
@@ -107,7 +133,7 @@ footer {
 	bottom: 0px;
 	display: flex;
 	justify-content: space-between;
-	padding: 2vh;
+	padding: 2.5vh;
 	margin-top: 20px;
 }
 
@@ -115,6 +141,7 @@ footer {
 .footer-section {
 	font-family: 'Lato', sans-serif;
 	font-size: calc(1vw + 10px);
+	color: var(--text_color);
 }
 
 /* Animation des sections du footer au survol */
@@ -126,12 +153,6 @@ footer {
 /* Aspect de la section "mentions légales" */
 #legal-container {
 	margin: 20px;
-}
-
-/* Mise en page des grands menus */
-.big-menu {
-	width: 1000px;
-	margin-left: 4cm;
 }
 
 /* Marges des paragraphes intérieurs des grands menu */
@@ -154,7 +175,7 @@ footer {
 
 /* Marges extérieures des grands menus */
 .big-menu-container {
-	padding: 100px 65px 55px 65px;
+	padding: 60px 65px 45px 65px;
 }
 
 .big-menu-container--salmon-background {
@@ -175,27 +196,27 @@ footer {
 }
 
 .big-menu-logo--width-note-enchantée {
-	width: 40%;
+	width: 28%;
 }
 
 .big-menu-logo--width-chic-française {
-	width: 60%;
+	width: 50%;
 }
 
 /* Petit logo "La note enchantée" */
 #note-enchantée-small-logo {
 	display: block;
-	width: 30%;
+	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 25vh;
-	padding-bottom: 15vh;
+	padding-top: 12%;
+	padding-bottom: 5%;
 }
 
 /* Bordures des grands menus */
 .big-menu-border {
 	width: 26vw;
-	padding-top: 15px;
+	padding-top: 11px;
 }
 
 /* "le chic à la française", couleur 1 */
@@ -215,13 +236,18 @@ footer {
 
 /* Padding des sous-titres des grands menus */
 .big-menu-subtitle {
-	padding-top: 20vh;
-	padding-bottom: 15vh;
+	padding-top: 5%;
+	padding-bottom: 1%;
 }
 
 .big-menu-content {
-	font-size: calc(1vw + 10px);
-	line-height: calc(3vw + 13px);
+	font-size: 155%;
+	line-height: 200%;
+}
+
+.big-menu-content--small-font {
+	font-size: 130%;
+	line-height: 200%;
 }
 
 .big-menu-content--font1 {
@@ -303,7 +329,17 @@ footer {
 	}
 
 	.big-menu-container {
-		padding: 82px 10px 100px 10px;
+		padding: 22px 14px 14px 14px;
+	}
+
+	.big-menu-content {
+		font-size: 87%;
+		line-height: 190%;
+	}
+
+	.big-menu-content--small-font {
+		font-size: 70%;
+		line-height: 190%;
 	}
 
 	#loader-container {

@@ -194,24 +194,6 @@ footer {
 	padding-top: 11px;
 }
 
-/* Marges des paragraphes intérieurs des grands menu */
-.mini-container {
-	margin-left: 6vw;
-	margin-right: 6vw;
-}
-
-/* Flexbox des plats des grands menus */
-.menu-flex {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-/* Style des prix des grands menus */
-.price {
-	font-weight: bolder;
-}
-
 /* Padding des sous-titres des grands menus */
 .big-menu-subtitle {
 	padding-top: 5%;
@@ -239,6 +221,24 @@ footer {
 
 .big-menu-content--dark-red {
 	color: #43191f;
+}
+
+/* Marges des paragraphes intérieurs des grands menu */
+.mini-container {
+	margin-left: 6vw;
+	margin-right: 6vw;
+}
+
+/* Flexbox des plats des grands menus */
+.menu-flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Style des prix des grands menus */
+.price {
+	font-weight: bolder;
 }
 
 /* "le chic à la française", couleur 1 */
@@ -298,6 +298,17 @@ footer {
 		width: 35%;
 	}
 
+	#loader-container {
+		width: 100%;
+		margin-left: 1vw;
+		margin-right: 10vw;
+		margin-top: -10px;
+	}
+
+	#legal-container {
+		font-size: 12px;
+	}
+
 	.mini-container {
 		margin: 0 auto;
 	}
@@ -314,17 +325,6 @@ footer {
 	.big-menu-content--small-font {
 		font-size: 70%;
 		line-height: 190%;
-	}
-
-	#loader-container {
-		width: 100%;
-		margin-left: 1vw;
-		margin-right: 10vw;
-		margin-top: -10px;
-	}
-
-	#legal-container {
-		font-size: 12px;
 	}
 
 	a.left_animation:before {

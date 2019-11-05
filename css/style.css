@@ -3,15 +3,12 @@
 
 /* Définition des couleurs principales du site */
 body {
-	--text_color: #fdcb46;
-	--background_color: #579c87;
-	margin: 0;
+	margin: 0 auto;
 }
 
 /* Aspect des liens */
 a {
 	text-decoration: none;
-	color: var(--darkred);
 	cursor: pointer;
 }
 
@@ -42,8 +39,8 @@ a.left_animation:hover:before {
 
 /* Mise en page du header */
 header {
-	background-color: var(--background_color);
-	color: var(--text_color);
+	background-color: #579c87;
+	color: #fdcb46;
 	padding: 1px 15px 1px 15px;
 	text-align: center;
 }
@@ -77,8 +74,8 @@ header {
 
 /* Mise en page du bouton "prochainement" */
 #button-container {
-	background-color: var(--background_color);
-	color: var(--text_color);
+	background-color: #579c87;
+	color: #fdcb46;
 	font-family: 'Montserrat', sans-serif;
 	border-radius: 13px;
 	font-size: calc(1.3vw + 8px);
@@ -104,31 +101,28 @@ header {
 /* Aspect des trois points */
 label {
 	font-size: calc(2vw + 10px);
-	color: var(--text_color);
+	color: #fdcb46;
 	opacity: 0;
 	display: inline-block;
 }
 
 /* Animation des trois points */
 label:nth-child(1) {
-	animation: points 1.5s 500ms infinite ease-in-out;
-	-webkit-animation: points 1.5s 300ms infinite ease-in-out;
+	animation: points 1.5s 300ms infinite ease-in-out;
 }
 
 label:nth-child(2) {
 	animation: points 1.5s 400ms infinite ease-in-out;
-	-webkit-animation: points 1.5s 400ms infinite ease-in-out;
 }
 
 label:nth-child(3) {
-	animation: points 1.5s 300ms infinite ease-in-out;
-	-webkit-animation: points 1.5s 500ms infinite ease-in-out;
+	animation: points 1.5s 500ms infinite ease-in-out;
 }
 
 /* Mise en page du footer */
 footer {
-	background-color: var(--background_color);
-	color: var(--text_color);
+	background-color: #579c87;
+	color: #fdcb46;
 	position: sticky;
 	bottom: 0px;
 	display: flex;
@@ -141,7 +135,7 @@ footer {
 .footer-section {
 	font-family: 'Lato', sans-serif;
 	font-size: calc(1vw + 10px);
-	color: var(--text_color);
+	color: #fdcb46;
 }
 
 /* Animation des sections du footer au survol */
@@ -281,25 +275,6 @@ footer {
 
 /* Animation "trois points" */
 @keyframes points {
-	0% {
-		opacity: 0;
-	}
-
-	33% {
-		opacity: 1;
-	}
-
-	66% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-
-}
-
-@-webkit-keyframes points {
 	0% {
 		opacity: 0;
 	}

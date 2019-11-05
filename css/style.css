@@ -328,4 +328,8 @@ footer {
 		font-size: 12px;
 	}
 
+	a.left_animation:before {
+		height: 2px;
+	}
+
 }

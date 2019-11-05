@@ -1,7 +1,6 @@
 /* Définition des polices */
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Caveat|PT-Serif');
 
-/* Définition des couleurs principales du site */
 body {
 	margin: 0 auto;
 }
@@ -144,27 +143,9 @@ footer {
 	animation-timing-function: linear;
 }
 
-/* Aspect de la section "mentions légales" */
+/* Aspect de la page "mentions légales" */
 #legal-container {
 	margin: 20px;
-}
-
-/* Marges des paragraphes intérieurs des grands menu */
-.mini-container {
-	margin-left: 6vw;
-	margin-right: 6vw;
-}
-
-/* Flexbox des grands menus */
-.menu-flex {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-/* Style des prix des grands menus */
-.price {
-	font-weight: bolder;
 }
 
 /* Marges extérieures des grands menus */
@@ -213,19 +194,22 @@ footer {
 	padding-top: 11px;
 }
 
-/* "le chic à la française", couleur 1 */
-.chic-française--dark-orange {
-	color: #C67412;
+/* Marges des paragraphes intérieurs des grands menu */
+.mini-container {
+	margin-left: 6vw;
+	margin-right: 6vw;
 }
 
-/* "le chic à la française", couleur 2*/
-.chic-française--magenta {
-	color: #A56799;
+/* Flexbox des plats des grands menus */
+.menu-flex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-/* "le chic à la française", couleur 3 */
-.chic-française--purple {
-	color: #6E4CCC;
+/* Style des prix des grands menus */
+.price {
+	font-weight: bolder;
 }
 
 /* Padding des sous-titres des grands menus */
@@ -255,6 +239,21 @@ footer {
 
 .big-menu-content--dark-red {
 	color: #43191f;
+}
+
+/* "le chic à la française", couleur 1 */
+.chic-française--dark-orange {
+	color: #C67412;
+}
+
+/* "le chic à la française", couleur 2*/
+.chic-française--magenta {
+	color: #A56799;
+}
+
+/* "le chic à la française", couleur 3 */
+.chic-française--purple {
+	color: #6E4CCC;
 }
 
 /* Animation "secousse" */

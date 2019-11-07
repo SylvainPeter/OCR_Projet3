@@ -14,6 +14,7 @@ a {
 /* Animation souligné */
 a.left_animation {
 	position: relative;
+	padding: 0 5px;
 }
 
 a.left_animation:before {
@@ -21,7 +22,7 @@ a.left_animation:before {
 	position: absolute;
 	width: 0;
 	height: 3px;
-	bottom: -10px;
+	bottom: 20px;
 	left: 0;
 	background-color: #e69500;
 	visibility: hidden;
@@ -79,7 +80,7 @@ header {
 	border-radius: 13px;
 	font-size: calc(1.3vw + 8px);
 	text-align: center;
-	width: 30vw;
+	width: 36%;
 	margin: 0 auto;
 	margin-top: 60px;
 	margin-bottom: 40px;
@@ -90,10 +91,9 @@ header {
 
 /* Container des trois points */
 #loader-container {
-	width: calc(100% - 200px);
-	margin-left: 7.5vw;
-	margin-right: 10vw;
-	margin-top: 5px;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
 	margin-top: -18px;
 }
 
@@ -127,7 +127,6 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 2.5vh;
-	margin-top: 20px;
 }
 
 /* Aspect des sections du footer */
@@ -150,7 +149,7 @@ footer {
 
 /* Marges extérieures des grands menus */
 .big-menu-container {
-	padding: 60px 65px 45px 65px;
+	padding: 60px 65px 100px 65px;
 }
 
 .big-menu-container--salmon-background {
@@ -159,6 +158,10 @@ footer {
 
 .big-menu-container--grey-background {
 	background-color: #EDEFEE;
+}
+
+.big-menu-container--pink-background {
+	background-color: #FFF4FE;
 }
 
 /* Logo des grands menus */
@@ -170,16 +173,16 @@ footer {
 	padding-top: 5px;
 }
 
-.big-menu-logo--width-note-enchantée {
+.big-menu-logo--width-note-enchantee {
 	width: 28%;
 }
 
-.big-menu-logo--width-chic-française {
+.big-menu-logo--width-chic-francaise {
 	width: 50%;
 }
 
 /* Petit logo "La note enchantée" */
-#note-enchantée-small-logo {
+#note-enchantee-small-logo {
 	display: block;
 	width: 25%;
 	margin-left: auto;
@@ -191,7 +194,8 @@ footer {
 /* Bordures des grands menus */
 .big-menu-border {
 	width: 26vw;
-	padding-top: 11px;
+	height:2vw;
+	padding-top: 44px;
 }
 
 /* Padding des sous-titres des grands menus */
@@ -242,17 +246,17 @@ footer {
 }
 
 /* "le chic à la française", couleur 1 */
-.chic-française--dark-orange {
+.chic-francaise--dark-orange {
 	color: #C67412;
 }
 
 /* "le chic à la française", couleur 2*/
-.chic-française--magenta {
+.chic-francaise--magenta {
 	color: #A56799;
 }
 
 /* "le chic à la française", couleur 3 */
-.chic-française--purple {
+.chic-francaise--purple {
 	color: #6E4CCC;
 }
 
@@ -299,9 +303,6 @@ footer {
 	}
 
 	#loader-container {
-		width: 100%;
-		margin-left: 1vw;
-		margin-right: 10vw;
 		margin-top: -10px;
 	}
 

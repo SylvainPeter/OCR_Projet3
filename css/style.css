@@ -177,8 +177,12 @@ footer {
 	width: 28%;
 }
 
-.big-menu-logo--width-chic-francaise {
+.big-menu-logo--width-delice-papilles {
 	width: 50%;
+}
+
+.big-menu-logo--width-palette-gout {
+	width: 45%;
 }
 
 /* Petit logo "La note enchantée" */
@@ -194,7 +198,7 @@ footer {
 /* Bordures des grands menus */
 .big-menu-border {
 	width: 26vw;
-	height:2vw;
+	height: 2vw;
 	padding-top: 44px;
 }
 
@@ -204,6 +208,7 @@ footer {
 	padding-bottom: 1%;
 }
 
+/* Contenu des grands menus */
 .big-menu-content {
 	font-size: 155%;
 	line-height: 200%;
@@ -234,7 +239,7 @@ footer {
 }
 
 /* Flexbox des plats des grands menus */
-.menu-flex {
+.menu-flex, .subtitle-flex {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -296,18 +301,43 @@ footer {
 
 }
 
-/* Règles particulières pour les petits écrans */
 @media screen and (max-width:768px) {
+	a.left_animation:before {
+		height: 2px;
+		bottom: 10px;
+	}
+
 	#header-logo {
-		width: 35%;
+		width: 40%;
+	}
+
+	.small-menu-image {
+		width: 55vw;
 	}
 
 	#loader-container {
 		margin-top: -10px;
 	}
+	
+	.menu-flex {
+		display: block;
+		text-align: center;
+	}
 
-	#legal-container {
-		font-size: 12px;
+     .subtitle-flex {
+     	justify-content: space-around;
+     	padding-top: 25px;
+     	padding-bottom: 25px;
+	}
+
+	.big-menu-content--small-font {
+		font-size: 85%;
+		line-height: 190%;
+	}
+
+	.big-menu-content {
+		font-size: 110%;
+		line-height: 190%;
 	}
 
 	.mini-container {
@@ -315,21 +345,42 @@ footer {
 	}
 
 	.big-menu-container {
-		padding: 22px 14px 14px 14px;
+		padding: 32px 14px 45px 14px;
+		text-align: center;
 	}
 
-	.big-menu-content {
-		font-size: 87%;
-		line-height: 190%;
+	.big-menu-logo--width-delice-papilles {
+		width: 62%;
 	}
 
-	.big-menu-content--small-font {
-		font-size: 70%;
-		line-height: 190%;
+	.big-menu-logo--width-note-enchantee {
+		width: 45%;
 	}
 
-	a.left_animation:before {
-		height: 2px;
+    .big-menu-logo--width-chic-francaise {
+		width: 70%;
+	}
+
+    .big-menu-logo--width-palette-gout {
+		width: 61%;
+	}
+
+	#note-enchantee-small-logo {
+		width: 40%;
+		padding-top: 46px;
+	}
+
+	.big-menu-subtitle {
+		padding: 0px;
+	}
+
+	.big-menu-border {
+		display: none;
+		visibility: hidden;
+	}
+
+	#legal-container {
+		font-size: 12px;
 	}
 
 }

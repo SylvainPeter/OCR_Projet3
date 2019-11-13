@@ -5,50 +5,70 @@ body {
 	margin: 0 auto;
 }
 
-/* Aspect des liens */
+header {
+	padding: 1px 15px 1px 15px;
+	background-color: #579c87;
+	color: #fdcb46;
+	text-align: center;
+}
+
+/* Taille du logo "ohmyfood" */
+    #header-logo {
+	    width: 23%;
+    }
+
 a {
 	text-decoration: none;
 	cursor: pointer;
 }
 
 /* Transition effet souligné */
-a.left_animation {
-	position: relative;
-	padding: 0 5px;
-}
+    a.left_animation {
+	    position: relative;
+	    padding: 0 5px;
+    }
 
-a.left_animation:before {
-	position: absolute;
-	content: "";
-	background-color: #e69500;
-	width: 0;
-	height: 3px;
-	bottom: 20px;
-	left: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.3s ease-in-out;
-	transition-duration: 0.55s;
-}
+    a.left_animation:before {
+	    position: absolute;
+	   	width: 0;
+	    height: 3px;
+	    bottom: 20px;
+	    left: 0;
+	    background-color: #e69500;
+	  	content: "";
+	   	visibility: hidden;
+	    opacity: 0;
+	    transition: all 0.3s ease-in-out;
+	    transition-duration: 0.55s;
+    }
 
 a.left_animation:hover:before {
+	width: 100%;
 	visibility: visible;
 	opacity: 1;
-	width: 100%;
 }
 
-/* Mise en page du header */
-header {
+footer {
+	position: sticky;
+	display: flex;
+	padding: 2.5vh;
+	bottom: 0px;
 	background-color: #579c87;
 	color: #fdcb46;
-	text-align: center;
-	padding: 1px 15px 1px 15px;
+	justify-content: space-between;
 }
 
-/* Taille du logo "ohmyfood" */
-#header-logo {
-	width: 23%;
-}
+	.footer-section {
+		color: #fdcb46;
+		font-family: 'Lato', sans-serif;
+		font-size: calc(1vw + 10px);
+	}
+
+/* Animation des sections du footer au survol */
+	.footer-section:hover {
+		animation: wiggle 75ms 3;
+		animation-timing-function: linear;
+	}
 
 /* Flexbox autour des petits menus */
 #small-menu-container {
@@ -60,9 +80,9 @@ header {
 
 /* Aspect des petits menus cliquables */
 .small-menu-image {
-	border: 1px solid lightgrey;
 	width: 30vw;
-	margin-top: 40px;
+	margin : 40px 0 0 0;
+	border: 1px solid lightgrey;
 	transition: all ease 500ms;
 }
 
@@ -74,18 +94,17 @@ header {
 
 /* Mise en page du bouton "prochainement" */
 #button-container {
-	color: #fdcb46;
-	background-color: #579c87;
 	width: 36%;
-	border-radius: 13px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: calc(1.3vw + 8px);
-	text-align: center;
 	margin: 0 auto;
 	margin-top: 60px;
 	margin-bottom: 40px;
-	padding-top: 9px;
-	padding-bottom: 4px;
+	padding: 9px 0 4px 0;
+	border-radius: 13px;
+	background-color: #579c87;
+	color: #fdcb46;
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(1.3vw + 8px);
+	text-align: center;
 	cursor: pointer;
 }
 
@@ -118,30 +137,6 @@ header {
 	animation: points 1.5s 500ms infinite ease-in-out;
 }
 
-/* Mise en page du footer */
-footer {
-	position: sticky;
-	display: flex;
-	justify-content: space-between;
-	color: #fdcb46;
-	background-color: #579c87;
-	bottom: 0px;
-	padding: 2.5vh;
-}
-
-/* Aspect des sections du footer */
-.footer-section {
-	font-family: 'Lato', sans-serif;
-	color: #fdcb46;
-	font-size: calc(1vw + 10px);
-}
-
-/* Animation des sections du footer au survol */
-.footer-section:hover {
-	animation: wiggle 75ms 3;
-	animation-timing-function: linear;
-}
-
 /* Aspect de la page "mentions légales" */
 #legal-container {
 	margin: 20px;
@@ -150,9 +145,10 @@ footer {
 /* Marges extérieures des grands menus */
 .big-menu-container {
 	padding: 60px 65px 100px 65px;
-	margin:60px;
+	margin: 60px;
 }
 
+/* Variantes de couleurs de fond des grands menus */
 .big-menu-container--salmon-background {
 	background-color: #FCDFDB;
 }
@@ -165,15 +161,14 @@ footer {
 	background-color: #FFF4FE;
 }
 
-/* Logo des grands menus */
 .big-menu-logo {
 	display: block;
 	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5px;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
 }
 
+/* Variantes de taille des logos des grands menus */
 .big-menu-logo--width-note-enchantee {
 	width: 28%;
 }
@@ -186,30 +181,28 @@ footer {
 	width: 45%;
 }
 
-/* Petit logo "La note enchantée" */
 #note-enchantee-small-logo {
 	display: block;
 	width: 25%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 12%;
-	padding-bottom: 5%;
+	margin: 0 auto;
+	padding: 12% 0 5% 0;
 }
 
-/* Bordures des grands menus */
 .big-menu-border {
 	width: 26vw;
 	height: 2vw;
-	padding-top: 44px;
+	padding: 44px 0 0 0;
+}
+
+.big-menu-border--correction {
+	padding: 36px 0 0 0;
 }
 
 /* Padding des en-têtes des grands menus */
 .big-menu-subtitle {
-	padding-top: 5%;
-	padding-bottom: 1%;
+	padding: 5% 0 1% 0;
 }
 
-/* Contenu des grands menus */
 .big-menu-content {
 	font-size: 155%;
 	line-height: 200%;
@@ -221,8 +214,8 @@ footer {
 }
 
 .big-menu-content--font1 {
-	font-family: 'Caveat', sans-serif;
 	color: #43191f;
+	font-family: 'Caveat', sans-serif;
 }
 
 .big-menu-content--font2 {
@@ -235,12 +228,12 @@ footer {
 
 /* Marges des paragraphes intérieurs des grands menu */
 .mini-container {
-	margin-left: 6vw;
-	margin-right: 6vw;
+	margin: 0 6vw 0 6vw;
 }
 
 /* Flexbox des plats et des en-têtes des grands menus */
-.menu-flex, .subtitle-flex {
+.menu-flex, 
+.subtitle-flex {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -251,17 +244,15 @@ footer {
 	font-weight: bolder;
 }
 
-/* "le chic à la française", couleur 1 */
+/* menu "le chic à la française", couleurs des bordures */
 .chic-francaise--dark-orange {
 	color: #C67412;
 }
 
-/* "le chic à la française", couleur 2*/
 .chic-francaise--magenta {
 	color: #A56799;
 }
 
-/* "le chic à la française", couleur 3 */
 .chic-francaise--purple {
 	color: #6E4CCC;
 }
@@ -322,18 +313,17 @@ footer {
 	}
 
     .subtitle-flex {
+        padding: 25px 0 25px 0;
      	justify-content: space-around;
-     	padding-top: 25px;
-     	padding-bottom: 25px;
-	}
-
-	.big-menu-content--small-font {
-		font-size: 85%;
-		line-height: 190%;
 	}
 
 	.big-menu-content {
 		font-size: 110%;
+		line-height: 190%;
+	}
+
+	.big-menu-content--small-font {
+		font-size: 100%;
 		line-height: 190%;
 	}
 
@@ -365,11 +355,11 @@ footer {
 
 	#note-enchantee-small-logo {
 		width: 40%;
-		padding-top: 46px;
+		padding: 46px 0 0 0;
 	}
 
 	.big-menu-subtitle {
-		padding: 0px;
+		padding: 0;
 	}
 
 	.big-menu-border {

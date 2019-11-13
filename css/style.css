@@ -42,11 +42,11 @@ a {
 	    transition-duration: 0.55s;
     }
 
-a.left_animation:hover:before {
-	width: 100%;
-	visibility: visible;
-	opacity: 1;
-}
+    a.left_animation:hover:before {
+	    width: 100%;
+	    visibility: visible;
+	    opacity: 1;
+    }
 
 footer {
 	position: sticky;
@@ -209,7 +209,7 @@ footer {
 }
 
 .big-menu-content--small-font {
-	font-size: 130%;
+	font-size: 115%;
 	line-height: 200%;
 }
 

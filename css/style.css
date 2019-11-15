@@ -1,6 +1,10 @@
 /* Définition des polices */
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Caveat|PT-Serif');
 
+html { 
+	font-size: calc(1em + 1vw) 
+}
+
 body {
 	margin: 0 auto;
 }
@@ -14,7 +18,7 @@ header {
 
 /* Taille du logo "ohmyfood" */
     #header-logo {
-	    width: 23%;
+	    width: 5em;
     }
 
 a {
@@ -54,7 +58,6 @@ footer {
 	padding: 2.5vh;
 	bottom: 0px;
 	background-color: #579c87;
-	color: #fdcb46;
 	justify-content: space-between;
 }
 
@@ -158,32 +161,33 @@ footer {
 }
 
 .big-menu-container--pink-background {
+	padding: 60px 30px 100px 30px;
 	background-color: #FFF4FE;
 }
 
 .big-menu-logo {
 	display: block;
-	width: 50%;
+	width: 12.5em;
 	margin: 0 auto;
 	padding: 5px 0 0 0;
 }
 
 /* Variantes de taille des logos des grands menus */
 .big-menu-logo--width-note-enchantee {
-	width: 28%;
+	width: 7.1em;
 }
 
 .big-menu-logo--width-delice-papilles {
-	width: 50%;
+	width: 12em;
 }
 
 .big-menu-logo--width-palette-gout {
-	width: 45%;
+	width: 11em;
 }
 
 #note-enchantee-small-logo {
 	display: block;
-	width: 25%;
+	width: 10em;
 	margin: 0 auto;
 	padding: 12% 0 5% 0;
 }
@@ -195,7 +199,7 @@ footer {
 }
 
 .big-menu-border--correction {
-	padding: 36px 0 0 0;
+	padding: 43px 0 0 0;
 }
 
 /* Padding des en-têtes des grands menus */
@@ -204,7 +208,7 @@ footer {
 }
 
 .big-menu-content {
-	font-size: 155%;
+	font-size: 1em;
 	line-height: 200%;
 }
 
@@ -219,6 +223,7 @@ footer {
 }
 
 .big-menu-content--font2 {
+	font-size: 0.85em;
 	font-family: 'PT Serif', serif;
 }
 
@@ -236,7 +241,7 @@ footer {
 .subtitle-flex {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 /* Style des prix des grands menus */
@@ -296,7 +301,7 @@ footer {
 	}
 
 	#header-logo {
-		width: 40%;
+		width: 4em;
 	}
 
 	.small-menu-image {
@@ -317,10 +322,6 @@ footer {
      	justify-content: space-around;
 	}
 
-	.big-menu-content {
-		font-size: 110%;
-		line-height: 190%;
-	}
 
 	.big-menu-content--small-font {
 		font-size: 100%;
@@ -338,23 +339,23 @@ footer {
 	}
 
 	.big-menu-logo--width-delice-papilles {
-		width: 62%;
+		width: 8.2em;
 	}
 
 	.big-menu-logo--width-note-enchantee {
-		width: 45%;
+		width: 6em;
 	}
 
     .big-menu-logo--width-chic-francaise {
-		width: 70%;
+		width: 9em;
 	}
 
     .big-menu-logo--width-palette-gout {
-		width: 61%;
+		width: 8em;
 	}
 
 	#note-enchantee-small-logo {
-		width: 40%;
+		width: 9em;
 		padding: 46px 0 0 0;
 	}
 

@@ -60,7 +60,7 @@ footer {
 	display: -webkit-box;
 	display: flex;
 	padding: 2.5vh;
-	bottom: 0px;
+	bottom: 0;
 	background-color: #579c87;
 	-webkit-box-pack: justify;
 	justify-content: space-between;

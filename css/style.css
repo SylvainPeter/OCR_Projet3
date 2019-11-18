@@ -21,6 +21,32 @@ header {
 	width: 5em;
 }
 
+footer {
+	position: -webkit-sticky;
+	position: sticky;
+	display: -webkit-box;
+	display: flex;
+	padding: 2.5vh;
+	bottom: 0;
+	background-color: #579c87;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+.footer-section {
+	color: #fdcb46;
+	font-family: 'Lato', sans-serif;
+	font-size: calc(1vw + 10px);
+}
+
+/* Animation des sections du footer au survol */
+.footer-section:hover {
+	-webkit-animation: wiggle 75ms 3;
+	animation: wiggle 75ms 3;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -52,32 +78,6 @@ a.left_animation:hover:before {
 	width: 100%;
 	visibility: visible;
 	opacity: 1;
-}
-
-footer {
-	position: -webkit-sticky;
-	position: sticky;
-	display: -webkit-box;
-	display: flex;
-	padding: 2.5vh;
-	bottom: 0;
-	background-color: #579c87;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-}
-
-.footer-section {
-	color: #fdcb46;
-	font-family: 'Lato', sans-serif;
-	font-size: calc(1vw + 10px);
-}
-
-/* Animation des sections du footer au survol */
-.footer-section:hover {
-	-webkit-animation: wiggle 75ms 3;
-	animation: wiggle 75ms 3;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
 }
 
 /* Flexbox autour des petits menus */

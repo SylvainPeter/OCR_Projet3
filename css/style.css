@@ -24,12 +24,10 @@ header {
 footer {
 	position: -webkit-sticky;
 	position: sticky;
-	display: -webkit-box;
 	display: flex;
 	padding: 2.5vh;
 	bottom: 0;
 	background-color: #579c87;
-	-webkit-box-pack: justify;
 	justify-content: space-between;
 }
 
@@ -82,7 +80,6 @@ a.left_animation:hover:before {
 
 /* Flexbox autour des petits menus */
 #small-menu-container {
-	display: -webkit-box;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -253,9 +250,7 @@ a.left_animation:hover:before {
 /* Flexbox des plats et des en-têtes des grands menus */
 .menu-flex,
 .subtitle-flex {
-	display: -webkit-box;
 	display: flex;
-	-webkit-box-pack: justify;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 }
